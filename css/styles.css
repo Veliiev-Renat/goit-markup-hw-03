@@ -15,7 +15,7 @@ body{
 .section{
     padding: 94px 0px;
 }
-ul,h1,h2,h3,h4,h5,h6,p{
+ul,h1,h2,h3,h4,h5,h6,p,a,div,img{
     margin: 0;
     padding: 0;
 }
@@ -33,6 +33,10 @@ header{
     letter-spacing: 0.03em;
     color: #000;
     margin-right: 93px;
+}
+header .container{
+    display: flex;
+    align-items: baseline;
 }
 .header-part{
     display: inline-block;
@@ -58,7 +62,6 @@ span{
     color: #2196F3;
 }
 .contacts{
-    display: inline;
     margin-left: auto;
 }
 .container .contact{
@@ -216,12 +219,15 @@ border-radius: 0px 0px 4px 4px;
     padding: 20px 24px;
     box-sizing: border-box;
     width: 370px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 /*main partfolio*/
 .catalog li{
     display: inline-block;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 .catalog button{
 font-weight: 500;
@@ -263,10 +269,11 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
+margin-bottom: 4px;
 }
 .catalog-list p{
 font-size: 16px;
-line-height: 1.7;
+line-height: 1.8;
 letter-spacing: 0.03em;
 color: #757575;
 }
@@ -284,6 +291,7 @@ footer address{
 }
 .footer-logo{
 font-family:'Raleway';
+display: inline-block;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -295,7 +303,9 @@ margin-bottom: 20px;
 address ul{
     list-style-type: none;
     padding-inline-start: 0px;
-    margin-top: 20px;
+}
+address li{
+    margin-bottom: 9px;
 }
 a[target]{
     font-size: 14px;
@@ -303,7 +313,6 @@ a[target]{
     letter-spacing: 0.03em; 
     color: #FFFFFF;
     text-decoration: none;
-    margin-bottom: 9px;
 }
 .mail{
 font-size: 14px;
@@ -311,7 +320,6 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
-margin-bottom: 9px;
 }
 a[target]:hover,
 a[target]:focus{
